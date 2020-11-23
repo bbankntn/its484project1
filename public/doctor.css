@@ -1,0 +1,66 @@
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .d-comment textarea{
+        margin-left: 100px;
+        font-size: 16px;
+  }
+
+  .form-patient{
+    width: 85%;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.form-patient input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.form-patient button{
+    width: 5%;
+    padding: 5px;
+    margin-left: 45%;
+    margin-top: 5px;
+    background: #5d8ffc;
+	color: #ffffff;
+	border: 0px;
+	border-radius: 5px;
+}
+
+#wrapper{
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 20px;
+    
+}

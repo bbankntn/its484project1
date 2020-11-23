@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Hospital Thailand Register</title>
+	  <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+<!--  <FORM action="register.php" method="POST"> -->
+  <div id="wrapper">
+        <div id="div_header">
+            <h1>Create Your Account</h1>
+		</div>
+		<div id="div_main">
+		    <div id="div_content" class="form">
+            Email:<INPUT TYPE = "text" NAME = "email" SIZE = 30> <BR><BR>
+            Password:<INPUT TYPE = "text" NAME = "passwd1" SIZE = 30> <BR><BR>
+            Confirm Password:<INPUT TYPE = "passwd2" NAME = "passwd2" SIZE = 30> <BR><BR>
+            Country:<SELECT name = "country"> <BR>
+                   <OPTION VALUE = "thailand">Thailand</option>
+		           <OPTION VALUE = "u.s.">U.S.</option>
+		           <OPTION VALUE = "u.k.">U.K.</option>
+		           <OPTION VALUE = "spain">Spain</option>
+		        </SELECT><BR><BR>
+            Name:<INPUT TYPE = "text" NAME = "FirstN" SIZE = 30> <BR><BR>
+            Surname:<INPUT TYPE = "text" NAME = "SurN" SIZE = 30> <BR><BR>
+            Address:<INPUT TYPE = "text" NAME = "Addr1" SIZE = 70><BR><BR>
+            City:<INPUT TYPE = "text" NAME = "city" SIZE = 30><BR><BR>
+            Province:<INPUT TYPE = "text" NAME = "province" SIZE = 30><BR><BR>
+            Postal Code:<INPUT TYPE = "text" NAME = "poscode" SIZE = 30><BR><BR>
+            Phone:<INPUT TYPE = "text" NAME = "phone" SIZE = 30><BR><BR>
+			Role:<SELECT name = "role"> <BR>
+			     <OPTION VALUE = "doctor">Doctor</option>
+				 <OPTION VALUE = "patient">Patient</option>
+			   </SELECT><BR><BR>
+            <a href = "index.html"><INPUT TYPE = "submit" NAME = "create" VALUE = "Create Account"></a>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

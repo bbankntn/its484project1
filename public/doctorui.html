@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor UI</title>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .vertical-menu {
+            width: 50%;
+	        margin: 0px auto;
+	        margin-top: 25px;
+	        padding: 20px;
+        }
+        
+        .vertical-menu button {
+          background-color: #eee;
+          color: black;
+          display: block;
+          padding: 12px;
+          text-decoration: none;
+          width: 100%;
+        }
+        
+        .vertical-menu button:hover {
+          background-color: #ccc;
+        }
+        
+        .vertical-menu button.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    
+
+<div class="vertical-menu">
+  <h1>Welcome to hospital</h1>
+  <button class="active">List of your patient</button>
+  <button type="button" id="user1" onclick="tinner()">1</button>
+  <button type="button" id="user2" onclick="GoDoctor()">2</button>
+  <button type="button" id="user3" onclick="GoDoctor()">3</button>
+  <button type="button" id="user4" onclick="GoDoctor()">4</button>
+  <button type="button" id="user5" onclick="GoDoctor()">5</button>
+</div>
+    
+</body>
+</html>

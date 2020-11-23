@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital Thailand</title>
+	<link rel="stylesheet" href="index.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.0.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.0.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+    <!--  <FORM action="register.php" method="POST"> -->
+  <!-- <FORM action='login.php' method='POST'> -->
+  <div id="wrapper">
+    <div id="div_header">
+         <h1>Hospital Thailand Login</h1>
+	</div>
+	    <div id="div_main">
+		  <div id="div_content" class="form">
+            <img src = "User_logo2.png" width = "200"><BR>
+            <INPUT TYPE = "text" NAME = "username1" SIZE = 30 VALUE = "Username"> <BR><BR>
+            <INPUT TYPE = "text" NAME = "passwd1" SIZE = 30 VALUE = "Password"> <BR><BR>
+			Role:<SELECT name = "role"> <BR>
+			     <OPTION VALUE = "doctor">Doctor</option>
+				 <OPTION VALUE = "patient">Patient</option>
+			   </SELECT><BR><BR>
+            <form method="post">
+            <input type="button" value="login" onClick="this.form.action='hospital login.php'; submit()">
+            <input type="button" value="register" onClick="this.form.action='hospital register.html'; submit()">
+		  </div>
+		</div>
+	</div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="doctor.css">
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <h1>Patient Personal Information</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'London')">Patient Personal</button>
+        <button class="tablinks" onclick="openTab(event, 'Paris')">Health Informantion</button>
+        <button class="tablinks" onclick="openTab(event, 'Tokyo')">Back</button>
+    </div>
+      
+      <!-- Tab content -->
+    <div id="London" class="tabcontent">
+        <div class="form-patient">
+        Name: <input type="text" id="fname">
+        LastName: <input type="text" id="lname">
+        Address: <input type="text" id="address">
+        City: <input type="text" id="city">
+        Province: <input type="text" id="province">
+        Post Code: <input type="text" id="postc">
+        Phone: <input type="text" id="phone">
+        </div>
+    </div>
+      
+    <div id="Paris" class="tabcontent">
+        <div class="form-patient">
+        Age: <input type="text" id="age" disabled>
+        Weight: <input type="text" id="weight"disabled>
+        Height: <input type="text" id="height"disabled>
+        Pressure: <input type="text" id="pressure"disabled>
+        HeartRate: <input type="text" id="heartrate"disabled>
+        <div class="d-comment">
+            Comment: 
+            <br><textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+            <button type="button" id="btn-confirm2">Confirm</button>
+        </div>
+        
+    </div>
+</div>   
+</body>
+</html>
